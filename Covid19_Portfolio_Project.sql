@@ -1,3 +1,4 @@
+-- language: sql
 -- Retrieve and sort COVID-19 death data by continent, excluding null values
 
 select *
