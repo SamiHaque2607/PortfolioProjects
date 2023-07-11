@@ -1,4 +1,3 @@
--- language: sql
 -- Retrieve and sort COVID-19 death data by continent, excluding null values
 
 select *
@@ -106,14 +105,6 @@ from PopvsVac
 order by location, date;
 
 -- Creating views to store data for later visualisations in Tableau
--- Population infected count
-
-create view `covid19-392218.Coviddata.PopulationInfected` as
-select Location, Population, MAX(total_cases) as HighestInfectionCount,  Max((total_cases/population))*100 as PercentPopulationInfected
-from `covid19-392218.Coviddata.CovidDeaths`
-where continent is not null 
-group by Location, Population
-order by PercentPopulationInfected desc
 
 -- Death count per country
 
@@ -126,7 +117,7 @@ order by TotalDeathCount desc
 
 -- Death count per continent
 create view `covid19-392218.Coviddata.ContinentDeathCount` as
-Select location, MAX(cast(Total_deaths as int)) as TotalDeathCount
+select location, MAX(cast(Total_deaths as int)) as TotalDeathCount
 from `covid19-392218.Coviddata.CovidDeaths`
 where continent is null 
 group by location
@@ -135,24 +126,48 @@ order by TotalDeathCount desc
 -- Global death percentage per day
 
 create view `covid19-392218.Coviddata.GlobalDeathPercentage` as
-select date,SUM(new_cases) as total_cases, SUM(cast(new_deaths as int)) as total_deaths, SUM(cast(new_deaths as int))/SUM(New_Cases)*100 as DeathPercentage
+select
+  date,
+  COALESCE(SUM(new_cases), 0) AS total_cases,
+  COALESCE(SUM(CAST(new_deaths AS INT64)), 0) AS total_deaths,
+  CASE
+    when COALESCE(SUM(new_cases), 0) = 0 THEN 0
+    else (COALESCE(SUM(CAST(new_deaths AS INT64)), 0) / NULLIF(COALESCE(SUM(new_cases), 0), 0)) * 100
+ end as DeathPercentage
 from `covid19-392218.Coviddata.CovidDeaths`
-where continent is not null 
-group By date
-order by 1,2
+where continent is not null
+group by date
+order by date;
 
--- The percent of population that has recieved at least one vaccine
+-- The amount of the population that has recieved at least one vaccine
 
 create view `covid19-392218.Coviddata.PopulationVaccinated` as
-select continent, location, date, population, new_vaccinations,
-  SUM(new_vaccinations) OVER (PARTITION BY location order by location, date) as RollingCountVaccination,
-  (SUM(new_vaccinations) OVER (PARTITION BY location ORDER BY location, date) / population) * 100 AS PercentageVaccinated
-from (
-  select dea.continent, dea.location, dea.date, dea.population, vac.new_vaccinations
-  from `covid19-392218.Coviddata.CovidDeaths` dea
-  join `covid19-392218.Coviddata.CovidVaccinations` vac
-    ON dea.location = vac.location
-    and dea.date = vac.date
-  where dea.continent is not null
-) subquery
-order by 2, 3;
+select
+  dea.location,
+  COALESCE(dea.population, 0) AS population,
+  COALESCE(SUM(vac.new_vaccinations), 0) AS VaccinationCount
+from `covid19-392218.Coviddata.CovidDeaths` dea
+LEFT JOIN
+  `covid19-392218.Coviddata.CovidVaccinations` vac
+on
+  dea.location = vac.location
+  and dea.date = vac.date
+where dea.continent is not null
+group by dea.location, dea.population;
+
+-- Countries death per day
+
+create view `covid19-392218.Coviddata.CountriesDeathPercentage` as
+select
+  location AS country,
+  date,
+  COALESCE(SUM(new_cases), 0) AS total_cases,
+  COALESCE(SUM(CAST(new_deaths AS INT64)), 0) AS total_deaths,
+  CASE
+    when COALESCE(SUM(new_cases), 0) = 0 THEN 0
+    else (COALESCE(SUM(CAST(new_deaths AS INT64)), 0) / NULLIF(COALESCE(SUM(new_cases), 0), 0)) * 100
+  end as DeathPercentage
+from `covid19-392218.Coviddata.CovidDeaths`
+where continent is not null
+group by location, date
+order by location, date;
