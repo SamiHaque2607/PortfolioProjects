@@ -139,18 +139,17 @@ where continent is not null
 group by date
 order by date;
 
--- The amount of the population that has recieved at least one vaccine
+-- Vaccinated vs not vaccinated per country
 
 create view `covid19-392218.Coviddata.PopulationVaccinated` as
 select
   dea.location,
-  COALESCE(dea.population, 0) AS population,
-  COALESCE(SUM(vac.new_vaccinations), 0) AS VaccinationCount
+  COALESCE(dea.population - SUM(vac.new_vaccinations), 0) as NotVaccinated,
+  COALESCE(SUM(vac.new_vaccinations), 0) as Vaccinated
 from `covid19-392218.Coviddata.CovidDeaths` dea
 LEFT JOIN
   `covid19-392218.Coviddata.CovidVaccinations` vac
-on
-  dea.location = vac.location
+on dea.location = vac.location
   and dea.date = vac.date
 where dea.continent is not null
 group by dea.location, dea.population;
