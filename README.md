@@ -1,4 +1,5 @@
-# Links to the dashboards I have created from the data portrayed within this repository:
-
 ### Covid 19 data:
 https://public.tableau.com/app/profile/sami2054/viz/Covid19_Dashboard_16892779096030/Dashboard1 
+
+### Global C02 Emissions:
+https://public.tableau.com/app/profile/sami2054/viz/GlobalC02Emissions_16892900889020/Dashboard1
