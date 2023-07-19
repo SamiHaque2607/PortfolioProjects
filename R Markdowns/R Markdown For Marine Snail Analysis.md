@@ -94,7 +94,7 @@ melted_WSdata <- melt(sand_white, id.vars = "...1")
 ```
 ## Plots:
 
-Plot for Brown shelled forest Snails:
+Plot for Brown-shelled Forest Snails:
 
 ```{r bf snail, echo=FALSE}
 ggplot(data = melted_BFdata, aes(x = "Species and Site", y = value, fill = variable)) + 
@@ -103,7 +103,7 @@ ggplot(data = melted_BFdata, aes(x = "Species and Site", y = value, fill = varia
   ylab("Number of shells") + 
   scale_y_continuous(breaks = seq(0, max(melted_BFdata$value), 5))
 ```
-Plot for White shelled forest Snails:
+Plot for White-shelled Forest Snails:
 
 ```{r wf snail, echo=FALSE}
 ggplot(data = melted_WFdata, aes(x = "Species and Site", y = value, fill = variable)) + 
@@ -112,7 +112,7 @@ ggplot(data = melted_WFdata, aes(x = "Species and Site", y = value, fill = varia
   ylab("Number of shells") + 
   scale_y_continuous(breaks = seq(0, max(melted_WFdata$value), 5))
 ```
-Plot for Brown shelled Sand Dune Snails:
+Plot for Brown-shelled Sand Dune Snails:
 
 ```{r bs snail, echo=FALSE}
 ggplot(data = melted_BSdata, aes(x = "Species and Site", y = value, fill = variable)) + 
@@ -121,9 +121,9 @@ ggplot(data = melted_BSdata, aes(x = "Species and Site", y = value, fill = varia
   ylab("Number of shells") + 
   scale_y_continuous(breaks = seq(0, max(melted_BSdata$value), 5))
 ```
-Plot for White shelled Sand Dune Snails:
+Plot for White-shelled Sand Dune Snails:
 
-```{r ws snail, echo=FALSE}
+```{r ws snail, }
 ggplot(data = melted_WSdata, aes(x = "Species and Site", y = value, fill = variable)) + 
   geom_bar(stat = "identity", position = "dodge") + 
   xlab("White shell sand dune snails") + 
