@@ -16,5 +16,5 @@ In this repository, you can find the following R Markdown files:
 
 To explore the R Markdown report that provides an analysis of marine snail shell data, click the link below:
 
-[Marine Snail Shell Analysis R Markdown](Marine_Snail_Shell_Analysis.md)
+[Marine Snail Shell Analysis R Markdown](Marine Snail Shell Analysis.md)
 
