@@ -66,7 +66,7 @@ print(sw_result)
 ```
 The chi-squared test results reveal that there was **no statistically significant association** between color-band combinations and their frequencies in the different snail datasets. The p-values obtained for all four tests (fb_result, fw_result, sb_result, sw_result) are greater than the common significance level of  **0.05**. 
 
-This suggested that color-band occurrences appear to be independent of each other within their respective datasets. Therefore, I can conclude that the observed color-band distributions are  **not significantly different ** from what would be expected under the assumption of independence
+This suggested that color-band occurrences appear to be independent of each other within their respective datasets. Therefore, I can conclude that the observed color-band distributions are  **not significantly different** from what would be expected under the assumption of independence
 
 ## Importing Data
 
