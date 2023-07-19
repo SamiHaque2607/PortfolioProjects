@@ -77,7 +77,7 @@ head(Snail_Table)
 
 ## Preparing Data For Visulisation
 
-I separated the data from the **"Snail_Table"** data frame into **four** different categories: **forest_brown, forest_white, sand_brown##, and ##sand_white**. Each category corresponds to a specific type of snail data and its respective color-band combinations and frequencies.
+I separated the data from the **"Snail_Table"** data frame into **four** different categories: **forest_brown, forest_white, sand_brown**, and **sand_white**. Each category corresponds to a specific type of snail data and its respective color-band combinations and frequencies.
 ```{r Seperate, }
 forest_brown <- Snail_Table[1,]
 forest_white <- Snail_Table[2,]
