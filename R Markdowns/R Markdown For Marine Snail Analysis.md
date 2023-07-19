@@ -18,7 +18,7 @@ The  **reshape2** package facilitated data transformation from wide to long form
 
 Utilizing the  **ggplot2** package, bar plots were generated, visualizing the relationships between color-band combinations and their corresponding frequencies for different snail categories in a customizable and visually appealing manner. 
 
-Finally, the  **stats** package played a vital role in conducting the  **chi-squared test **, determining the statistical significance of associations between color-band combinations and frequencies, providing valuable insights into potential relationships within the data.
+Finally, the  **stats** package played a vital role in conducting the  **chi-squared test**, determining the statistical significance of associations between color-band combinations and frequencies, providing valuable insights into potential relationships within the data.
 ```{r packages}
 library(readxl)
 library(reshape2)
