@@ -10,6 +10,18 @@
 </details>
 
 <details>
+<summary>R Code</summary>
+
+### Cyclistic Case Study (02/07/2023):
+[R Code For Cyclistic Case Study](https://github.com/SamiHaque2607/PortfolioProjects/blob/main/R/Cyclistic%20tripdata%20Case%20Study.R)
+
+### Marine Snail Analysis (17/07/2023):
+[R Code For Marine Snail Analysis](https://github.com/SamiHaque2607/PortfolioProjects/blob/main/R/Marine%20Snail%20Shell%20Analysis.R)
+
+</details>
+
+
+<details>
 <summary>R Markdowns</summary>
 
 ### Marine Snail Analysis (17/07/2023):
