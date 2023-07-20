@@ -95,35 +95,21 @@ melted_WSdata <- melt(sand_white, id.vars = "...1")
 ## Plots:
 
 Plot for Brown-shelled Forest Snails:
+
 ![Brown Shell](https://github.com/SamiHaque2607/PortfolioProjects/assets/138823522/4db8b7b3-ef08-417c-a8a7-f8a887b46770)
 
 Plot for White-shelled Forest Snails:
 
-```{r wf snail, echo=FALSE}
-ggplot(data = melted_WFdata, aes(x = "Species and Site", y = value, fill = variable)) + 
-  geom_bar(stat = "identity", position = "dodge") + 
-  xlab("White shell forest snails") + 
-  ylab("Number of shells") + 
-  scale_y_continuous(breaks = seq(0, max(melted_WFdata$value), 5))
-```
+![White Shell](https://github.com/SamiHaque2607/PortfolioProjects/assets/138823522/d3d5ba61-6e94-43b0-bc54-4e4757584471)
+
 Plot for Brown-shelled Sand Dune Snails:
 
-```{r bs snail, echo=FALSE}
-ggplot(data = melted_BSdata, aes(x = "Species and Site", y = value, fill = variable)) + 
-  geom_bar(stat = "identity", position = "dodge") + 
-  xlab("Brown shell sand dune snails") + 
-  ylab("Number of shells") + 
-  scale_y_continuous(breaks = seq(0, max(melted_BSdata$value), 5))
-```
+![Brown Shell Sand](https://github.com/SamiHaque2607/PortfolioProjects/assets/138823522/8f153a44-5d15-473d-8d69-54a1c4acc789)
+
 Plot for White-shelled Sand Dune Snails:
 
-```{r ws snail, }
-ggplot(data = melted_WSdata, aes(x = "Species and Site", y = value, fill = variable)) + 
-  geom_bar(stat = "identity", position = "dodge") + 
-  xlab("White shell sand dune snails") + 
-  ylab("Number of shells") + 
-  scale_y_continuous(breaks = seq(0, max(melted_WSdata$value), 5))
-```
+![White Shell Sand](https://github.com/SamiHaque2607/PortfolioProjects/assets/138823522/1b1fff21-70cd-4396-afd4-b3fce9d87036)
+
 The four plots display the number of shells with different color-bands for **four** categories of snails:  **"Brown shell forest snails," "White shell forest snails," "Brown shell sand dune snails,"** and  **"White shell sand dune snails."** Each plot presents the species and site of the snails on the x-axis and the count of shells on the y-axis. The bars represent the frequency of color-band combinations for each snail category. By visually comparing these plots, we can observe any  **variations in color-band occurrences** among different snail species and sites. These visualizations provide valuable insights into potential relationships between color-bands and snail characteristics, aiding in the analysis of snail populations and their distribution patterns.
 
 ## Clearing Up
