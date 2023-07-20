@@ -28,3 +28,15 @@
 [R Markdown For Marine Snail Analysis](https://github.com/SamiHaque2607/PortfolioProjects/blob/main/R%20Markdowns/R%20Markdown%20For%20Marine%20Snail%20Analysis.md)
 
 </details>
+
+<details>
+<summary>SQL Queries</summary>
+
+### Covid 19 Portfolio Project (12/07/2023):
+[SQL Query For Covid 19 Portfolio Project](https://github.com/SamiHaque2607/PortfolioProjects/blob/main/SQL/Covid%2019%20Portfolio%20Project.sql)
+
+### Data Cleaning Portfolio Project (12/07/2023):
+[SQL Query For Data Cleaning Portfolio Project](https://github.com/SamiHaque2607/PortfolioProjects/blob/main/SQL/Data%20Cleaning%20Portfolio%20Project.sql)
+
+</details>
+
