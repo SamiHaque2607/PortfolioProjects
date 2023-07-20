@@ -96,13 +96,8 @@ melted_WSdata <- melt(sand_white, id.vars = "...1")
 
 Plot for Brown-shelled Forest Snails:
 
-```{r bf snail, echo=FALSE}
-ggplot(data = melted_BFdata, aes(x = "Species and Site", y = value, fill = variable)) + 
-  geom_bar(stat = "identity", position = "dodge") + 
-  xlab("Brown shell forest snails") + 
-  ylab("Number of shells") + 
-  scale_y_continuous(breaks = seq(0, max(melted_BFdata$value), 5))
-```
+`![Brown shelled forest Snails](/Users/samihaque/Library/CloudStorage/OneDrive-Personal/Projects/Github/Marine Snail/Brown Shell.png)
+
 Plot for White-shelled Forest Snails:
 
 ```{r wf snail, echo=FALSE}
