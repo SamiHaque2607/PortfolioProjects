@@ -95,8 +95,7 @@ melted_WSdata <- melt(sand_white, id.vars = "...1")
 ## Plots:
 
 Plot for Brown-shelled Forest Snails:
-
-`![Brown shelled forest Snails](/Users/samihaque/Library/CloudStorage/OneDrive-Personal/Projects/Github/Marine Snail/Brown Shell.png)
+![Brown Shell](https://github.com/SamiHaque2607/PortfolioProjects/assets/138823522/4db8b7b3-ef08-417c-a8a7-f8a887b46770)
 
 Plot for White-shelled Forest Snails:
 
