@@ -18,6 +18,9 @@
 ### Marine Snail Analysis (17/07/2023):
 [R Code For Marine Snail Analysis](https://github.com/SamiHaque2607/PortfolioProjects/blob/main/R/Marine%20Snail%20Shell%20Analysis.R)
 
+### Employee’s Performance for HR Analytics (21/07/2023):
+[R Code For Employee’s Performance for HR Analytics](https://github.com/SamiHaque2607/PortfolioProjects/blob/main/R/Employee’s%20Performance%20for%20HR%20Analytics.R)
+
 </details>
 
 
@@ -26,6 +29,9 @@
 
 ### Marine Snail Analysis (17/07/2023):
 [R Markdown For Marine Snail Analysis](https://github.com/SamiHaque2607/PortfolioProjects/blob/main/R%20Markdowns/R%20Markdown%20For%20Marine%20Snail%20Analysis.md)
+
+### Employee’s Performance for HR Analytics (21/07/2023):
+[R Markdown For Employee’s Performance for HR Analytics](https://github.com/SamiHaque2607/PortfolioProjects/blob/main/R%20Markdowns/R%20Markdown%20For%20Employee’s%20Performance%20for%20HR%20Analytics.md)
 
 </details>
 
