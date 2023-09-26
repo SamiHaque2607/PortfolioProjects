@@ -18,13 +18,14 @@ library(dplyr)
 library(ggthemes)
 ```
 
-In the provided R code, four packages were utilized for different purposes. The **readxl** package enabled the reading of data from an Excel file into R, allowing the manipulation of the data as data frames for subsequent analysis. 
+In this R code, I utilised four essential packages for distinct purposes. The **readxl** package enabled the import of data from Excel into R, transforming it into data frames for subsequent analysis.
 
-Utilizing the  **ggplot2** package, bar plots were generated, visualizing the relationships between color-band combinations and their corresponding frequencies for different snail categories in a customizable and visually appealing manner. 
+With the **ggplot2** package, I crafted visually engaging bar plots to illustrate the relationships between colour-band combinations and frequencies within different snail categories.
 
-I also utilized the **dplyr** package to efficiently manipulate and summarize the data before creating the bar plots. The **dplyr** package is a powerful tool for data wrangling and transformation in R. With its intuitive and expressive syntax, **dplyr** allows for seamless data manipulation, making it easier to filter, arrange, group, and summarize data for visualization.
+Efficient data manipulation and summarisation were achieved through the versatile **dplyr** package, known for its intuitive syntax, making tasks like filtering, arranging, grouping, and summarising data seamless.
 
-In addition, I utilized the **ggthemes** package to further enhance the visual aesthetics of the bar plots. The **ggthemes** package provides a collection of custom themes and color palettes for **ggplot2**, allowing for even more visually appealing and professional-looking visualizations.
+Additionally, I incorporated the **ggthemes** package to elevate the visual aesthetics of the bar plots. It provides custom themes and colour palettes tailored for **ggplot2**, enhancing the overall professionalism of the visualisations.
+
 
 ## Importing Data
 
@@ -42,21 +43,21 @@ data <- na.omit(data)
 str(data)
 ```
 
-First, I removed any rows that contained missing or "NA" values from the dataset using the **na.omit()** function. By doing so, I ensured that the dataset only contained complete and relevant information, which would help maintain the accuracy of our analysis and visualizations.
+I started by cleaning the dataset, removing any rows with missing or "NA" values using the **na.omit()** function. This ensured that our data remained complete and accurate, laying a strong foundation for our analysis and visualisations.
 
-Next, I used the **str()** function to inspect the data types of each column in the dataset. This step provided me with valuable information about how the data was stored and organized. Understanding the data types of variables, such as numerical, categorical, or date formats, was crucial for appropriate data handling and visualization.
+Next, I used the **str()** function to inspect the data types of each column, gaining insights into how the data was organised. Understanding variables' data types, whether numerical, categorical, or date formats, was crucial for effective data handling and visualisation.
 
-These data preprocessing steps allowed me to create a solid foundation for robust and meaningful data exploration in my project. By removing missing values and gaining insights into the structure of the dataset, I could confidently proceed with subsequent data analysis and visualization processes.
+These pre-processing steps set the stage for robust data exploration in my project. I could confidently proceed with subsequent data analysis and visualisation tasks by eliminating missing values and grasping the dataset's structure.
 
 ```{r Summary, }
 summary(data[, c("no_of_trainings", "age", "previous_year_rating", "length_of_service", "KPIs_met_more_than_80", "awards_won", "avg_training_score")])
 ```
 
-I used the **summary()** function to generate a concise yet informative summary of key statistical measures for specific columns in the dataset **"data."** By selecting relevant columns, including **"no_of_trainings," "age," "previous_year_rating," "length_of_service," "KPIs_met_more_than_80," "awards_won,"** and **"avg_training_score,"** I obtained insights into the central tendency and spread of the numeric variables, as well as the frequency distribution of categorical variables.
+I employed the **summary()** function to provide a concise and informative summary of key statistical measures for specific columns in the "data" dataset. These columns included **"no_of_trainings," "age," "previous_year_rating," "length_of_service," "KPIs_met_more_than_80," "awards_won," ** and **"avg_training_score." ** This allowed me to gain insights into both the central tendency and spread of numerical variables and the frequency distribution of categorical variables.
 
-The summary provided me with essential statistics such as **minimum** and **maximum values**, **1st** and **3rd** quartiles (25th and 75th percentiles), and the **median** (2nd quartile or 50th percentile) for each selected column. Additionally, for categorical variables, it displayed the frequency count of each unique category, allowing me to grasp the **distribution of different categories** within those variables.
+The summary delivered essential statistics, encompassing minimum and maximum values, 1st and 3rd quartiles (25th and 75th percentiles), and the median (2nd quartile or 50th percentile) for each selected column. For categorical variables, it presented the frequency count of unique categories, providing a clear view of category distribution.
 
-By using the **summary()** function, I efficiently obtained an initial understanding of the data distribution and gained valuable insights into the characteristics of the variables of interest. This summary served as a foundation for further data exploration and analysis, enabling me to make informed decisions and draw meaningful conclusions in my project.
+By utilising the **summary()** function, I efficiently understood data distribution and garnered valuable insights into the characteristics of the variables under scrutiny. This summary formed the groundwork for further data exploration and analysis, empowering me to make informed decisions and draw meaningful conclusions in my project.
 
 ## Plots:
 
@@ -160,4 +161,4 @@ rm(list = ls())
 invisible(dev.off())
 ```
 
-The two lines of code provided perform essential tasks in an R script. The first line, **rm(list = ls())**, clears the R environment by removing all existing objects from memory. This step ensures a clean slate for the script, preventing potential conflicts or interference from previously defined variables. The second line, **invisible(dev.off()**, turns off the current graphics device used by ggplot, which is a commonly used package for creating data visualizations. By closing the graphics device, system resources are freed up, and plots are fully rendered and saved before moving on to other tasks. Together, these lines facilitate efficient memory management and a fresh start for the script's execution.
+The two lines of code provided perform essential tasks in an R script. The first line, **rm(list = ls())**, clears the R environment by removing all existing objects from memory. This step ensures a clean slate for the script, preventing potential conflicts or interference from previously defined variables. The second line, **invisible(dev.off()**, turns off the current graphics device used by ggplot, which is a commonly used package for creating data visualisations. By closing the graphics device, system resources are freed up, and plots are fully rendered and saved before moving on to other tasks. Together, these lines facilitate efficient memory management and a fresh start for the script's execution.
