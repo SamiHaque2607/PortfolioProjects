@@ -148,11 +148,11 @@ Upon executing the code, the correlation matrix was printed, displaying the **co
 
 #### Findings from the correlation analysis:
 
-- **No. of Trainings:** The number of trainings attended by employees has a **very weak negative correlation** (-0.086) with their age. This means that younger employees tend to participate in slightly more training sessions compared to older employees.
-- **Age:** Age shows a **weak positive correlation** (0.017) with the previous year rating. This indicates that as employees get older, they tend to receive slightly higher ratings in their performance assessments from the previous year.
-- **Previous Year Rating:** There is a **very weak positive correlation** (0.056) between the previous year rating and the average training score. This suggests that employees who received higher ratings in the previous year's performance assessment tend to have slightly higher average training scores.
-- **Length of Service:** The length of service in the company has a **relatively stronger positive correlation** (0.601) with age. This means that as employees grow older, they tend to have a longer tenure or history of working with the company.
-- **Avg Training Score:** There is a **very weak positive correlation** (0.045) between the average training score and the number of trainings attended. This suggests that employees who attend more training sessions tend to have slightly higher average training scores.
+- **No. of Trainings:** The correlation between the number of training sessions attended and age is statistically significant (p < 0.05), albeit quite weak (-0.086). This implies a subtle inclination for younger employees to engage in slightly more training sessions compared to their older counterparts.
+- **Age:** While a statistically significant (p < 0.05) positive correlation (0.017) exists between age and the previous year's rating, its practical significance is modest. On average, as employees age, there is a marginal increase in their performance ratings from the previous year.
+- **Previous Year Rating:** A statistically significant (p < 0.05), very weak positive correlation (0.056) is observed between the previous year's rating and the average training score. This suggests that employees who received higher ratings in the previous year's performance assessment tend to have slightly higher average training scores.
+- **Length of Service:** The correlation between the length of service and age is statistically significant (p < 0.05) and relatively robust (0.601). This indicates a notable tendency for employees to have a longer tenure with the company as they grow older.
+- **Avg Training Score:** Although a statistically significant (p < 0.05) very weak positive correlation (0.045) exists between the average training score and the number of training sessions attended, the practical implication is limited. On average, employees who attend more training sessions tend to have slightly higher average training scores.
 
 ## Clearing Up
 
