@@ -61,7 +61,8 @@ ggplot(iris, aes(x = Sepal.Length, y = Sepal.Width, color = Species)) +
     plot.background = element_rect(fill = "#F0F0F0")  # Set a light gray plot background
   )
 ```
-![iris1](https://github.com/SamiHaque2607/PortfolioProjects/assets/138823522/3141dfa7-d0c5-4160-8556-91595eef6321)
+<img src="https://github.com/SamiHaque2607/PortfolioProjects/assets/138823522/3141dfa7-d0c5-4160-8556-91595eef6321" alt="iris1" width="600" />
+
 
 ### Plot for the box plot of Sepal Length by Species:
 
@@ -86,7 +87,7 @@ ggplot(iris, aes(x = Species, y = Sepal.Length, fill = Species)) +
     plot.background = element_rect(fill = "#F0F0F0")
   )
 ```
-![iris2](https://github.com/SamiHaque2607/PortfolioProjects/assets/138823522/f5b0a6de-0bad-4670-8f68-c6bb16a56b5c)
+<img src="https://github.com/SamiHaque2607/PortfolioProjects/assets/138823522/f5b0a6de-0bad-4670-8f68-c6bb16a56b5c" alt="iris2" width="600" />
 
 ### Plot for the histogram plot of Sepal Length by Species:
 
@@ -113,7 +114,7 @@ ggplot(iris, aes(x = Sepal.Length, fill = Species)) +
     plot.background = element_rect(fill = "#F0F0F0")
   )
 ```
-![iris3](https://github.com/SamiHaque2607/PortfolioProjects/assets/138823522/2aa93da6-9cea-43f0-a6b3-66b65d52152f)
+<img src="https://github.com/SamiHaque2607/PortfolioProjects/assets/138823522/2aa93da6-9cea-43f0-a6b3-66b65d52152f" alt="iris3" width="600" />
 
 ### Plot for the density ridge plot with coloured points by Species:
 
@@ -144,7 +145,7 @@ ggplot(iris, aes(x = Sepal.Length, y = Species, fill = Species)) +
     plot.background = element_rect(fill = "#F0F0F0")  # Set plot background colour
   )
 ```
-![iris4](https://github.com/SamiHaque2607/PortfolioProjects/assets/138823522/48acf50f-8f80-4c54-8a53-21798844dafc)
+<img src="https://github.com/SamiHaque2607/PortfolioProjects/assets/138823522/48acf50f-8f80-4c54-8a53-21798844dafc" alt="iris4" width="600" />
 
 In this set of R code, I employed the **ggplot2** package to create a series of visually compelling plots using the classic Iris dataset. The initial **scatterplot** juxtaposes sepal length against sepal width, highlighting the distinct species with varying colours. To further explore the dataset, I created a **box plot** showcasing the distribution of sepal lengths across different species, employing transparency for a polished appearance. Subsequently, a **histogram** delves into the distribution of sepal lengths, providing a frequency perspective for each species. The final plot is a **density ridges plot**, revealing the density distribution of sepal lengths, with coloured points representing the species. These plots are not only informative but also aesthetically pleasing, as I carefully adjusted themes, colors, and other elements to enhance visual appeal and clarity.
 
