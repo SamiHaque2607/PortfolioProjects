@@ -19,7 +19,7 @@ library(ggridges)   # For ridge plots
 theme_set(theme_minimal())  # Set a minimal theme for plots
 ```
 
-I added the **ggplot2** package for advanced plotting, making data visuals clearer. To handle data more efficiently, I used the **dplyr** package. **ggthemes** enriched the look of my plots with different styles. For a unique touch, I brought in the **ggridges** package for ridge plots. The **theme_minimal()** function kept the background simple and neat.
+I added the **ggplot2** package for advanced plotting, making data visuals clearer. To handle data more efficiently, I used the **dplyr** package. **ggthemes** improved the look of my plots with different styles. For a unique touch, I brought in the **ggridges** package for ridge plots. The **theme_minimal()** function kept the background simple and neat.
 
 ## Importing & Pre-Processing Data
 
@@ -35,7 +35,7 @@ summarise(iris)  # Summarise the dataset
 summary(iris[, 1:4])
 ```
 
-In this block of code, I begin by loading the well-known Iris dataset. Using the **str()** function, I present a concise overview of the dataset's structure, revealing details about its variables and their types. Following this, I employ the **summarise()** function to provide a summary of the entire dataset, encapsulating key statistical measures. Additionally, summary statistics for the initial four columns of the Iris dataset are generated using the **summary()** function. This code snippet serves as an initial exploration of the Iris dataset, offering insights into its composition and statistical characteristics.
+In this block of code, I begin by loading the well-known Iris dataset. Using the **str()** function, I present a overview of the dataset's structure, revealing details about its variables and their types. Following this, I employ the **summarise()** function to provide a summary of the entire dataset, encapsulating key statistical measures. Additionally, summary statistics for the initial four columns of the Iris dataset are generated using the **summary()** function. This section of code serves as an initial exploration of the Iris dataset, offering insights into its composition and statistical characteristics.
 
 ## Plots:
 
