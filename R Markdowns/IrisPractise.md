@@ -191,7 +191,7 @@ predicted_classes <- ifelse(predicted_probs > 0.5, "versicolor", "setosa")
 
 After the model is trained on the training dataset, it is applied to the test dataset to generate predictions. The **predicted probabilities of each observation** belonging to a particular species are calculated using the predict function. These probabilities are then converted into predicted classes based on a threshold (0.5 in this case), resulting in the final predicted species.
 
-```{r Accuracy, echo=TRUE, message=FALSE, warning=FALSE}
+```{r Accuracy, echo=TRUE, warning=FALSE}
 accuracy <- mean(predicted_classes == test_data$Species)
 cat("Accuracy:", accuracy)
 ```
