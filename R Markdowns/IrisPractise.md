@@ -196,7 +196,7 @@ accuracy <- mean(predicted_classes == test_data$Species)
 cat("Accuracy:", accuracy)
 ```
 
-Finally, the accuracy of the model is calculated by comparing the predicted species to the actual species in the test set. This accuracy value, displayed using the **cat** function, provides a measure of how well the model performs in classifying iris species based on the selected features. A higher accuracy indicates better predictive performance.
+Finally, the accuracy of the model is calculated by comparing the predicted species to the actual species in the test set. This accuracy value, displayed using the **cat** function, provides a measure of how well the model performs in classifying iris species based on the selected features. A higher accuracy indicates better predictive performance. The accuracy was computed at **0.7111111**, indicating that the model correctly predicted the iris species in the test set with an approximate accuracy of **71.11%**.
 
 ## Clearing Up
 
