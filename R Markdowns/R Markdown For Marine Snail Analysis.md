@@ -6,9 +6,6 @@ output:
   html_document: default
   pdf_document: default
 ---
-```{r, echo=FALSE}
-knitr::opts_chunk$set(warning = FALSE)
-```
 
 ## Load Packages
 
