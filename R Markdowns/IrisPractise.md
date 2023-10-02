@@ -5,9 +5,6 @@ date: "2023-09-27"
 output: html_document
 ---
 
-```{r message=FALSE, warning=FALSE, include=FALSE}
-knitr::opts_chunk$set(warning = FALSE)
-```
 
 ## Load Packages
 
