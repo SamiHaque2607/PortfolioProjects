@@ -20,7 +20,6 @@ With the **ggplot2** package, I crafted visually engaging bar plots to illustrat
 
 Efficient data manipulation and summarisation were achieved through the versatile **dplyr** package, known for its intuitive syntax, making tasks like filtering, arranging, grouping, and summarising data seamless.
 
-Additionally, I incorporated the **ggthemes** package to elevate the visual aesthetics of the bar plots. It provides custom themes and colour palettes tailored for **ggplot2**, enhancing the overall professionalism of the visualisations.
 
 
 ## Importing Data
@@ -49,7 +48,7 @@ These pre-processing steps set the stage for robust data exploration in my proje
 summary(data[, c("no_of_trainings", "age", "previous_year_rating", "length_of_service", "KPIs_met_more_than_80", "awards_won", "avg_training_score")])
 ```
 
-I employed the **summary()** function to provide a concise and informative summary of key statistical measures for specific columns in the "data" dataset. These columns included **"no_of_trainings," "age," "previous_year_rating," "length_of_service," "KPIs_met_more_than_80," "awards_won," ** and **"avg_training_score." ** This allowed me to gain insights into both the central tendency and spread of numerical variables and the frequency distribution of categorical variables.
+I used the **summary()** function to provide a concise and informative summary of key statistical measures for specific columns in the "data" dataset. These columns included **"no_of_trainings," "age," "previous_year_rating," "length_of_service," "KPIs_met_more_than_80," "awards_won," ** and **"avg_training_score." ** This allowed me to gain insights into both the central tendency and spread of numerical variables and the frequency distribution of categorical variables.
 
 The summary delivered essential statistics, encompassing minimum and maximum values, 1st and 3rd quartiles (25th and 75th percentiles), and the median (2nd quartile or 50th percentile) for each selected column. For categorical variables, it presented the frequency count of unique categories, providing a clear view of category distribution.
 
