@@ -1,4 +1,23 @@
 <details>
+<summary>Python</summary>
+
+### Anomaly Detection in Credit Card Transactions Project (11/09/2024):
+[Anomaly Detection in Credit Card Transactions with Jupyter Notebook]([https://github.com/SamiHaque2607/PortfolioProjects/blob/main/SQL/Covid%2019%20Portfolio%20Project.sql](https://github.com/SamiHaque2607/PortfolioProjects/blob/main/Python/Anomaly%20Detection%20in%20Credit%20Card%20Transactions.ipynb))
+
+</details>
+
+<details>
+<summary>SQL Queries</summary>
+
+### Covid 19 Portfolio Project (12/07/2023):
+[SQL Query For Covid 19 Portfolio Project](https://github.com/SamiHaque2607/PortfolioProjects/blob/main/SQL/Covid%2019%20Portfolio%20Project.sql)
+
+### Data Cleaning Portfolio Project (12/07/2023):
+[SQL Query For Data Cleaning Portfolio Project](https://github.com/SamiHaque2607/PortfolioProjects/blob/main/SQL/Data%20Cleaning%20Portfolio%20Project.sql)
+
+</details>
+
+<details>
 <summary>Data Dashboards</summary>
 
 ### Covid-19 Data (13/07/2023):
@@ -26,7 +45,6 @@
 
 </details>
 
-
 <details>
 <summary>R Markdowns</summary>
 
@@ -40,14 +58,5 @@
 [R Markdown For Iris Dataset Practise](https://github.com/SamiHaque2607/PortfolioProjects/blob/main/R%20Markdowns/R%20Markdown%20For%20Iris%20Dataset%20Practise.md)
 </details>
 
-<details>
-<summary>SQL Queries</summary>
 
-### Covid 19 Portfolio Project (12/07/2023):
-[SQL Query For Covid 19 Portfolio Project](https://github.com/SamiHaque2607/PortfolioProjects/blob/main/SQL/Covid%2019%20Portfolio%20Project.sql)
-
-### Data Cleaning Portfolio Project (12/07/2023):
-[SQL Query For Data Cleaning Portfolio Project](https://github.com/SamiHaque2607/PortfolioProjects/blob/main/SQL/Data%20Cleaning%20Portfolio%20Project.sql)
-
-</details>
 
