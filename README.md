@@ -2,7 +2,7 @@
 <summary>Python</summary>
 
 ### Anomaly Detection in Credit Card Transactions Project (11/09/2024):
-[Anomaly Detection in Credit Card Transactions with Jupyter Notebook]([https://github.com/SamiHaque2607/PortfolioProjects/blob/main/SQL/Covid%2019%20Portfolio%20Project.sql](https://github.com/SamiHaque2607/PortfolioProjects/blob/main/Python/Anomaly%20Detection%20in%20Credit%20Card%20Transactions.ipynb))
+[Anomaly Detection in Credit Card Transactions with Jupyter Notebook](https://github.com/SamiHaque2607/PortfolioProjects/blob/main/SQL/Covid%2019%20Portfolio%20Project.sql](https://github.com/SamiHaque2607/PortfolioProjects/blob/main/Python/Anomaly%20Detection%20in%20Credit%20Card%20Transactions.ipynb))
 
 </details>
 
