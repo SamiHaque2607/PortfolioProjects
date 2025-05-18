@@ -4,6 +4,9 @@
 ### Anomaly Detection in Credit Card Transactions Project (11/09/2024):
 [Anomaly Detection in Credit Card Transactions with Jupyter Notebook](https://github.com/SamiHaque2607/PortfolioProjects/blob/main/Python/Anomaly%20Detection%20in%20Credit%20Card%20Transactions.ipynb)
 
+### Sudoku Solver and Performance Benchmark Project (16/05/2025):  
+[Sudoku Solver and Runtime Benchmark in Python, C++, and HTML](https://github.com/SamiHaque2607/sudoku-solver-benchmark)
+
 </details>
 
 <details>
