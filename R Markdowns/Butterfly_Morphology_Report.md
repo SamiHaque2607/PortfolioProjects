@@ -111,7 +111,7 @@ Therefore, parametric tests are appropriate for this species.
 
 ### Histogram and Shapiro-Wilk Test for *Coenonympha pamphilus*
 
-``` r
+``` r, echo=FALSE
 ggplot(data_Coenonympha, aes(x = Forewing_length)) +
   geom_histogram(binwidth = 1, fill = "#009E73", colour = "black", alpha = 0.7) +
   geom_density(aes(y = ..count.. * 1), fill = "transparent", colour = "red", size = 1.5, bw = 1) +
@@ -154,7 +154,7 @@ is visualised with semi-transparent coloured polygons. Finally,
 butterfly sampling points are plotted and jittered slightly to reduce
 overlap, with points coloured by species.
 
-``` r
+``` r, echo=FALSE
 # Load UK boundaries
 uk <- ne_countries(scale = "large", country = "united kingdom", returnclass = "sf")
 uk_regions <- ne_states(country = "united kingdom", returnclass = "sf")
@@ -214,7 +214,6 @@ ggplot() +
        y = "Latitude")
 ```
 
-![](Butterfly_Morphology_Report_files/figure-gfm/unnamed-chunk-6-1.png)<!-- -->
 
 This map clearly shows butterfly sampling sites across the UK, coloured
 by species. The North, Midlands, and South regions are highlighted using
@@ -237,7 +236,7 @@ model_cp_temp <- lm(Forewing_length ~ avg_meantemp, data = data_Coenonympha)
 
 ### Plot for *Aglais urticae*
 
-``` r
+``` r, echo=FALSE
 ggplot(data_Aglais, aes(x = avg_meantemp, y = Forewing_length)) +
   geom_point(aes(color = region, shape = region), size = 2.5, alpha = 0.8) +
   geom_smooth(aes(group = 1), method = "lm", se = TRUE, linewidth = 1.2, color = "black") +
@@ -268,7 +267,7 @@ sensitivity.
 
 ### Plot for *Coenonympha pamphilus*
 
-``` r
+``` r, echo=FALSE
 ggplot(data_Coenonympha, aes(x = avg_meantemp, y = Forewing_length)) +
   geom_point(aes(color = region, shape = region), size = 2.5, alpha = 0.8) +
   geom_smooth(aes(group = 1), method = "lm", se = TRUE, linewidth = 1.2, color = "black") +
@@ -305,7 +304,7 @@ model_cp_lat <- lm(Forewing_length ~ Latitude, data = data_Coenonympha)
 
 ### Plot for *Aglais urticae*
 
-``` r
+``` r, echo=FALSE
 ggplot(data_Aglais, aes(x = Latitude, y = Forewing_length)) +
   geom_point(aes(color = region, shape = region), size = 2.5, alpha = 0.8) +
   geom_smooth(aes(group = 1), method = "lm", se = TRUE, linewidth = 1.2, color = "black") +
@@ -334,7 +333,7 @@ with Bergmann’s Rule and larger body sizes in colder climates.
 
 ### Plot for *Coenonympha pamphilus*
 
-``` r
+``` r, echo=FALSE
 ggplot(data_Coenonympha, aes(x = Latitude, y = Forewing_length)) +
   geom_point(aes(color = region, shape = region), size = 2.5, alpha = 0.8) +
   geom_smooth(aes(group = 1), method = "lm", se = TRUE, linewidth = 1.2, color = "black") +
@@ -458,7 +457,7 @@ such as Bergmann’s Rule.
 
 ### Regional Mean Comparison Plot
 
-``` r
+``` r, echo=FALSE
 regional_summary <- data %>%
   group_by(Scientific_name, region) %>%
   summarise(mean_length = mean(Forewing_length),
@@ -515,7 +514,7 @@ importance_melt <- reshape2::melt(importance_df, id.vars = "Variable")
 
 ### Variable Importance Comparison
 
-``` r
+``` r, echo=FALSE
 ggplot(importance_melt, aes(x = reorder(Variable, value), y = value, fill = variable)) +
   geom_bar(stat = "identity", position = "dodge", alpha = 0.8) +
   coord_flip() +
