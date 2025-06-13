@@ -75,7 +75,7 @@ theme_scientific <- function(base_size = 12) {
 
 ### Histogram and Shapiro-Wilk Test for *Aglais urticae*
 
-``` r
+``` r, echo=FALSE
 ggplot(data_Aglais, aes(x = Forewing_length)) +
   geom_histogram(binwidth = 1, fill = "#E69F00", colour = "black", alpha = 0.7) +
   geom_density(aes(y = ..count.. * 1), colour = "red", size = 1.5, bw = 1) +
