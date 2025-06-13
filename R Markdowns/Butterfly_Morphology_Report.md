@@ -121,12 +121,10 @@ ggplot(data_Coenonympha, aes(x = Forewing_length)) +
   theme_scientific()
 ```
 
-<figure>
-<img src="Butterfly_Morphology_Report_files/figure-gfm/fig3b-1.png"
-alt="(b) Histogram of forewing length for Coenonympha pamphilus." />
-<figcaption aria-hidden="true">(b) Histogram of forewing length for
-<em>Coenonympha pamphilus</em>.</figcaption>
-</figure>
+![](https://github.com/user-attachments/assets/8783445f-8b5e-49a3-aba2-4254c2ad9107)
+
+**Figure 3b.** Histogram of forewing length for *Coenonympha pamphilus*.
+
 
 ``` r
 shapiro.test(data_Coenonympha$Forewing_length)
@@ -212,7 +210,10 @@ ggplot() +
        y = "Latitude")
 ```
 
-![](Butterfly_Morphology_Report_files/figure-gfm/unnamed-chunk-6-1.png)<!-- -->
+![](https://github.com/user-attachments/assets/4a41239f-15ac-4f33-afd5-6adcfa790ad8)
+
+**Figure Map.** UK Regional Zones and Species Locations.
+
 
 This map clearly shows butterfly sampling sites across the UK, coloured
 by species. The North, Midlands, and South regions are highlighted using
@@ -252,12 +253,10 @@ ggplot(data_Aglais, aes(x = avg_meantemp, y = Forewing_length)) +
   theme_scientific()
 ```
 
-<figure>
-<img src="Butterfly_Morphology_Report_files/figure-gfm/fig4a-1.png"
-alt="(a) Forewing length vs. mean temperature for Aglais urticae." />
-<figcaption aria-hidden="true">(a) Forewing length vs. mean temperature
-for <em>Aglais urticae</em>.</figcaption>
-</figure>
+![](https://github.com/user-attachments/assets/48929709-5df7-494a-8875-33f2d3172ada)
+
+**Figure 4a.** Forewing length vs. mean temperature for *Aglais urticae*.
+
 
 This regression model shows a clear negative relationship between
 temperature and forewing length in *Aglais urticae*. Higher temperatures
@@ -283,12 +282,10 @@ ggplot(data_Coenonympha, aes(x = avg_meantemp, y = Forewing_length)) +
   theme_scientific()
 ```
 
-<figure>
-<img src="Butterfly_Morphology_Report_files/figure-gfm/fig4b-1.png"
-alt="(b) Forewing length vs. mean temperature for Coenonympha pamphilus." />
-<figcaption aria-hidden="true">(b) Forewing length vs. mean temperature
-for <em>Coenonympha pamphilus</em>.</figcaption>
-</figure>
+![](https://github.com/user-attachments/assets/26818e7f-70ff-47ef-a952-a288ea82ed26)
+
+**Figure 4b.** Forewing length vs. mean temperature for *Coenonympha pamphilus*.
+
 
 A similar negative trend is observed for *Coenonympha pamphilus*, but
 the relationship is weaker, indicating this specialist species may be
@@ -320,12 +317,10 @@ ggplot(data_Aglais, aes(x = Latitude, y = Forewing_length)) +
   theme_scientific()
 ```
 
-<figure>
-<img src="Butterfly_Morphology_Report_files/figure-gfm/fig5a-1.png"
-alt="(a) Forewing length vs. latitude for Aglais urticae." />
-<figcaption aria-hidden="true">(a) Forewing length vs. latitude for
-<em>Aglais urticae</em>.</figcaption>
-</figure>
+![](https://github.com/user-attachments/assets/d764ac90-17dc-432e-92b8-8a6357fb4685)
+
+**Figure 5a.** Forewing length vs. latitude for *Aglais urticae*.
+
 
 Forewing length increases with latitude in *Aglais urticae*, consistent
 with Bergmann’s Rule and larger body sizes in colder climates.
@@ -349,12 +344,10 @@ ggplot(data_Coenonympha, aes(x = Latitude, y = Forewing_length)) +
   theme_scientific()
 ```
 
-<figure>
-<img src="Butterfly_Morphology_Report_files/figure-gfm/fig5b-1.png"
-alt="(b) Forewing length vs. latitude for Coenonympha pamphilus." />
-<figcaption aria-hidden="true">(b) Forewing length vs. latitude for
-<em>Coenonympha pamphilus</em>.</figcaption>
-</figure>
+![](https://github.com/user-attachments/assets/6d79fc67-59ff-42f4-bb55-181845828ccb)
+
+**Figure 5b.** Forewing length vs. latitude for *Coenonympha pamphilus*.
+
 
 Although a positive relationship is also seen in *C. pamphilus*, the
 model fit is weaker, again suggesting more variable or buffered
@@ -479,12 +472,10 @@ ggplot(regional_summary, aes(x = region, y = mean_length, fill = Scientific_name
     labels = unique(data$Scientific_name))
 ```
 
-<figure>
-<img src="Butterfly_Morphology_Report_files/figure-gfm/fig6-1.png"
-alt="Figure 6. Regional mean forewing length with standard deviation bars." />
-<figcaption aria-hidden="true">Figure 6. Regional mean forewing length
-with standard deviation bars.</figcaption>
-</figure>
+![](https://github.com/user-attachments/assets/9598b064-370b-423f-9b06-91fed3944d79)
+
+**Figure 6.** Regional mean forewing length with standard deviation bars.
+
 
 Mean forewing size increases consistently from South to North in both
 species. One-way ANOVA and Tukey’s post hoc tests confirm significant
@@ -526,12 +517,10 @@ ggplot(importance_melt, aes(x = reorder(Variable, value), y = value, fill = vari
     labels = unique(data$Scientific_name))
 ```
 
-<figure>
-<img src="Butterfly_Morphology_Report_files/figure-gfm/fig7-1.png"
-alt="Figure 7. Random Forest variable importance for both butterfly species." />
-<figcaption aria-hidden="true">Figure 7. Random Forest variable
-importance for both butterfly species.</figcaption>
-</figure>
+![](https://github.com/user-attachments/assets/b5185d46-f0da-42cf-b7bc-7d3f040f1a23)
+
+**Figure 7.** Random Forest variable importance for both butterfly species.
+
 
 *Aglais urticae* showed strong importance across all temperature
 variables, with mean temperature contributing the most. In contrast, *C.
