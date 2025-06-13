@@ -87,12 +87,10 @@ ggplot(data_Aglais, aes(x = Forewing_length)) +
   theme_scientific()
 ```
 
-<figure>
-<img src="Butterfly_Morphology_Report_files/figure-gfm/fig3a-1.png"
-alt="(a) Histogram of forewing length for Aglais urticae." />
-<figcaption aria-hidden="true">(a) Histogram of forewing length for
-<em>Aglais urticae</em>.</figcaption>
-</figure>
+![](![Image](https://github.com/user-attachments/assets/06146ca9-1798-45bb-b1ea-632dde3068a8))
+
+**Figure 3a.** Histogram of forewing length for *Aglais urticae*.
+
 
 ``` r
 shapiro.test(data_Aglais$Forewing_length)
