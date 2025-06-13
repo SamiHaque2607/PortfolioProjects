@@ -87,7 +87,7 @@ ggplot(data_Aglais, aes(x = Forewing_length)) +
   theme_scientific()
 ```
 
-![](![Image](https://github.com/user-attachments/assets/06146ca9-1798-45bb-b1ea-632dde3068a8))
+![](https://github.com/user-attachments/assets/06146ca9-1798-45bb-b1ea-632dde3068a8)
 
 **Figure 3a.** Histogram of forewing length for *Aglais urticae*.
 
