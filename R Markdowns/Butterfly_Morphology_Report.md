@@ -210,7 +210,7 @@ ggplot() +
        y = "Latitude")
 ```
 
-![](https://github.com/user-attachments/assets/4a41239f-15ac-4f33-afd5-6adcfa790ad8)
+![](https://github.com/user-attachments/assets/865c9a20-f594-4907-8ac6-9fa0e4ffbff3)
 
 **Figure Map.** UK Regional Zones and Species Locations.
 
@@ -253,7 +253,7 @@ ggplot(data_Aglais, aes(x = avg_meantemp, y = Forewing_length)) +
   theme_scientific()
 ```
 
-![](https://github.com/user-attachments/assets/48929709-5df7-494a-8875-33f2d3172ada)
+![](https://github.com/user-attachments/assets/11bbe370-5600-4876-9d05-77c4925566a8)
 
 **Figure 4a.** Forewing length vs. mean temperature for *Aglais urticae*.
 
@@ -282,7 +282,7 @@ ggplot(data_Coenonympha, aes(x = avg_meantemp, y = Forewing_length)) +
   theme_scientific()
 ```
 
-![](https://github.com/user-attachments/assets/26818e7f-70ff-47ef-a952-a288ea82ed26)
+![](https://github.com/user-attachments/assets/23b21fab-b4bf-45a3-ba71-5c8355a8ad9d)
 
 **Figure 4b.** Forewing length vs. mean temperature for *Coenonympha pamphilus*.
 
@@ -317,7 +317,7 @@ ggplot(data_Aglais, aes(x = Latitude, y = Forewing_length)) +
   theme_scientific()
 ```
 
-![](https://github.com/user-attachments/assets/d764ac90-17dc-432e-92b8-8a6357fb4685)
+![](https://github.com/user-attachments/assets/21b5569c-bd6b-4ad2-88ca-42110120c93b)
 
 **Figure 5a.** Forewing length vs. latitude for *Aglais urticae*.
 
@@ -344,7 +344,7 @@ ggplot(data_Coenonympha, aes(x = Latitude, y = Forewing_length)) +
   theme_scientific()
 ```
 
-![](https://github.com/user-attachments/assets/6d79fc67-59ff-42f4-bb55-181845828ccb)
+![](https://github.com/user-attachments/assets/1d1e3a18-4b12-44a4-92a5-652c2beae014)
 
 **Figure 5b.** Forewing length vs. latitude for *Coenonympha pamphilus*.
 
@@ -472,7 +472,7 @@ ggplot(regional_summary, aes(x = region, y = mean_length, fill = Scientific_name
     labels = unique(data$Scientific_name))
 ```
 
-![](https://github.com/user-attachments/assets/9598b064-370b-423f-9b06-91fed3944d79)
+![](https://github.com/user-attachments/assets/83b7d2c6-bf76-4b09-942f-a3f88ed43c15)
 
 **Figure 6.** Regional mean forewing length with standard deviation bars.
 
@@ -517,7 +517,7 @@ ggplot(importance_melt, aes(x = reorder(Variable, value), y = value, fill = vari
     labels = unique(data$Scientific_name))
 ```
 
-![](https://github.com/user-attachments/assets/b5185d46-f0da-42cf-b7bc-7d3f040f1a23)
+![](https://github.com/user-attachments/assets/2626f20c-3e20-4610-b7e2-58ebec0453e2)
 
 **Figure 7.** Random Forest variable importance for both butterfly species.
 
