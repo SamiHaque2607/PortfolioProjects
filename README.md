@@ -63,4 +63,10 @@
 ### Morphological Adaptations in UK Butterflies (290/02/2025):
 [R Markdown For Morphological Adaptations in UK Butterflies Analysis](https://github.com/SamiHaque2607/PortfolioProjects/blob/main/R%20Markdowns/Butterfly_Morphology_Report.md)
 </details>
+<details>
+<summary>C++</summary>
 
+### Sudoku Solver (16/05/2025):  
+[Sudoku Solver in C++](https://github.com/SamiHaque2607/PortfolioProjects/blob/main/C%2B%2B/Sudoku%20Solver.cpp)
+
+</details>
